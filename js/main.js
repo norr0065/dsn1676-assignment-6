@@ -1,5 +1,5 @@
 var $btnShowHide = $('.btn-show-hide');
-var $box =$('.box');
+var $box = $('.box');
 
 $btnShowHide.on('click',function () {
     $box.toggleClass ('js-show-hide');
@@ -34,5 +34,9 @@ var $btnAppend = $('.btn-append');
 var $list = $('.list');
 
 $btnAppend.on('click',function () {
-    $list.toggleClass ('js-btn-append');
+
+var $li = $ ('<li>New List Element</li>');
+    $list.append($li);
 });
+
+
