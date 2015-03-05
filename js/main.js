@@ -12,11 +12,20 @@ $btnMove.on('click',function () {
     $diamond.toggleClass ('js-btn-move');
 });
 
-
 var $btnCollapseExpand = $('.btn-collapse-expand');
 var $panel = $('.panel'); 
-
 
 $btnCollapseExpand.on('click',function () {
     $panel.toggleClass ('js-collapse-expand');
 });
+
+var $btnBounce =$('.btn-bounce');
+var $circle =$('.circle');
+
+$btnBounce.on('click',function () {
+    $circle.toggleClass ('js-btn-bounce');
+});
+
+$circle.on('webkitAnimationEnd animationend', function () {
+    $circle.removeClass('js-btn-bounce');
+  });       
