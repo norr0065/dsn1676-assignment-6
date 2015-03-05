@@ -1,4 +1,4 @@
-var $btnShowHide =$('.btn-show-hide');
+var $btnShowHide = $('.btn-show-hide');
 var $box =$('.box');
 
 $btnShowHide.on('click',function () {
@@ -19,8 +19,8 @@ $btnCollapseExpand.on('click',function () {
     $panel.toggleClass ('js-collapse-expand');
 });
 
-var $btnBounce =$('.btn-bounce');
-var $circle =$('.circle');
+var $btnBounce = $('.btn-bounce');
+var $circle = $('.circle');
 
 $btnBounce.on('click',function () {
     $circle.toggleClass ('js-btn-bounce');
@@ -28,4 +28,11 @@ $btnBounce.on('click',function () {
 
 $circle.on('webkitAnimationEnd animationend', function () {
     $circle.removeClass('js-btn-bounce');
-  });       
+  });      
+
+var $btnAppend = $('.btn-append');
+var $list = $('.list');
+
+$btnAppend.on('click',function () {
+    $list.toggleClass ('js-btn-append');
+});
