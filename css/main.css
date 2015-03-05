@@ -133,19 +133,17 @@ div {
 
 .list li {
   padding: 0.5em;
-
   background-color: plum;
   border: 1px solid mediumpurple;
-  overflow: hidden;
-  transition: all 200ms linear;
   color: mediumpurple;
+  overflow:hidden;
 }
 
 .js-btn-append {
-    animation: btn-append 1s linear;
+    animation: js-btn-append 1s linear;
 }
 
-@keyframes btn-append {
+@keyframes js-btn-append {
     0% {
         max-height: 0;
     }

@@ -37,6 +37,5 @@ $btnAppend.on('click',function () {
 
 var $li = $ ('<li>New List Element</li>');
     $list.append($li);
+    $li.toggleClass ('js-btn-append');
 });
-
-
